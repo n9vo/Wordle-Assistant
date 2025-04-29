@@ -1,30 +1,54 @@
-# Wordle Assistant
+# Wordle Assistant Script
 
-JavaScript code that, when run on wordlegame.org during a game, returns all possible words fitting the criteria specified by the current state of the Wordle game. This usually narrows the words down to 1-4 within four word prompts.
+This JavaScript snippet helps you solve Wordle games on [wordlegame.org](https://wordlegame.org) by listing all candidate words matching the current game state.
 
 ## Requirements
 
-- A web browser
-- Ability to run JavaScript in the browser's developer console
+- A modern web browser (Chrome, Firefox, Edge, etc.)
+- Access to the browser's Developer Console (`F12` or right-click → Inspect)
 
-## Running the Script
+## Usage
 
-1. Open `main.js` and copy its entire content.
-2. Open the developer console in your browser (usually by pressing F12 or right-clicking on the page and selecting "Inspect").
-3. Paste the copied script into the console and press Enter.
-4. The script will read the words you've entered into the game and, using the collected data, print out a list of possible words to the console.
-5. Enter one of the possible words provided.
-6. Repeat steps 3-5 until you succeed (almost 100% guaranteed to win unless you pick unusually abstract words).
+1. Open the file `main.js` in your code editor and copy its entire contents.  
+2. In your browser, navigate to **[wordlegame.org](https://wordlegame.org)** and start a Wordle game.  
+3. Open the Developer Console:  
+   - Press **F12**, or  
+   - Press **Ctrl+Shift+I** / **Cmd+Option+I** (depending on your system).  
+4. Paste the copied script into the console and press **Enter**.  
+5. The script will analyze your previous guesses and display:  
+   - A list of all possible valid words based on green, yellow, and gray feedback.  
+   - Additional statistics like letter frequency and candidate counts.  
+6. Choose one of the suggested words and submit it in the game.  
+7. After each guess, repeat steps 3–6 to refine the candidate list.  
 
-## Important Notes
+> **Tip:** Run the script after each guess. With four well-chosen words, the solution set usually narrows down to just 1–4 possibilities.
 
-- Each time the script is run, it calculates the possible words using the previously entered words, considering green, yellow, and grey letters. It then prints the list of possible words, along with additional data, to the console.
-- If no words are entered yet, the script will return `undefined`.
-- The more criteria specified by the game, the more accurately the script can narrow down the possible words.
-- This project is open to contributions, particularly in automating this script to make it easier to use, possibly in the form of a browser extension or a more complex script/program.
+## Notes
+
+- If no guesses have been entered yet, the script returns `undefined`.  
+- Accuracy improves as more feedback (green, yellow, gray letters) is provided.  
+- This script does **not** auto-submit words; you must manually input the suggested guesses.
 
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Contributions and suggestions are highly encouraged!
 
-Please make sure to update tests as appropriate.
+1. Fork the repository.  
+2. Create a feature branch:  
+   ```bash
+   git checkout -b feature/your-feature
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Add feature"
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature/your-feature
+   ```
+5. Open a Pull Request to propose your changes.
+
+Please ensure that all tests are updated and passing when submitting new features.
+
+```*Enjoy near-certain Wordle victories—provided you choose your words wisely!*```
+      

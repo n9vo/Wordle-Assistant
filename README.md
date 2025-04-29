@@ -50,5 +50,5 @@ Contributions and suggestions are highly encouraged!
 
 Please ensure that all tests are updated and passing when submitting new features.
 
-```*Enjoy near-certain Wordle victories—provided you choose your words wisely!*```
+*Enjoy near-certain Wordle victories—provided you choose your words wisely!*
       
